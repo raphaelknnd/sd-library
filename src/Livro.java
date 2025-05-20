@@ -16,19 +16,19 @@ public class Livro {
     // Getters and Setters
 
     public int getId() {
-        return id;
+        return this.id;
     }
 
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
     }
 
     public String getAutor() {
-        return autor;
+        return this.autor;
     }
 
     public boolean estaDisponivel() {
-        return disponivel;
+        return this.disponivel;
     }
 
     public void setDisponivel(boolean disponivel) {
