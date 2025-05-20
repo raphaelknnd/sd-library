@@ -17,7 +17,7 @@ public class Client {
 
                 switch(opcao){
                     case 1:
-                        System.out.println(biblioteca.toString());
+                        System.out.println(biblioteca.listaLivros());
                         break;
                     case 2:
                         System.out.print("Informe o titulo do livro: ");
@@ -36,8 +36,6 @@ public class Client {
                         System.out.println("Opcao inválida!");
                 }
             }
-
-            option.close();
 
         } catch (Exception e) {
             System.err.println("Exception no client: " + e.getMessage());
