@@ -1,6 +1,4 @@
-import java.io.Serializable;
-
-public class Livro implements Serializable {
+public class Livro {
     private int id;
     private String titulo;
     private String autor;
@@ -39,6 +37,6 @@ public class Livro implements Serializable {
 
     @Override
     public String toString() {
-        return "[" + getId() + "]" + getTitulo() + "por" + getAutor() + "(" + (estaDisponivel() ? "Disponivel" : "Emprestado") + ")";
+        return "[" + getId() + "] " + getTitulo() + " por " + getAutor() + "(" + (estaDisponivel() ? "Disponivel" : "Emprestado") + ")";
     }
 }

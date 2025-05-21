@@ -14,14 +14,15 @@ public class Client {
                 System.out.println("1. Listar livros\n2. Buscar livro pelo titulo\n3. Emprestar livro pelo ID\n0. Sair");
                 System.out.println("Escolha uma opcao: ");
                 int opcao = option.nextInt();
+                option.nextLine();
 
                 switch(opcao){
                     case 1:
-                        System.out.println(biblioteca.listaLivros());
+                        biblioteca.listaLivros().forEach(System.out::println);
                         break;
                     case 2:
-                        System.out.print("Informe o titulo do livro: ");
-                        String titulo = option.next();
+                        System.out.println("Informe o titulo do livro: ");
+                        String titulo = option.nextLine();
                         System.out.println(biblioteca.buscaLivroPeloTitulo(titulo));
                         break;
                     case 3:

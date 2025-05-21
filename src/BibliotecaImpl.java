@@ -24,7 +24,7 @@ public class BibliotecaImpl extends UnicastRemoteObject implements Biblioteca {
     }
 
     @Override
-    public String buscaLivroPeloTitulo(String titulo) throws RemoteException{
+    public String buscaLivroPeloTitulo(String titulo) throws RemoteException {
         for (Livro b : livros) {
             if (b.getTitulo().equalsIgnoreCase(titulo)) {
                 return b.toString();
